@@ -1,4 +1,24 @@
 #!/usr/bin/python3
+# Created by Korey McKinley, Senior Security Consulant at LMG Security
+# https://lmgsecurity.com
+
+
+# Modified for python 3.x support by c4b3rw0lf 
+# Feb 2024
+# https://twitter.com/c4b3rw0lf
+
+
+
+# This tool will query the Microsoft Office 365 web server to determine
+# if an email account is valid or not. It does not need a password and
+# should not show up in the logs of a client's O365 tenant.
+
+# Note: Microsoft has implemented some throttling on this service, so
+# quick, repeated attempts to validate the same username over and over
+# may produce false positives. This tool is best ran after you've gathered
+# as many email addresses as possible through OSINT in a list with the
+# -f argument.
+
 
 import requests as req
 import argparse
