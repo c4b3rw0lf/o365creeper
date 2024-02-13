@@ -1,3 +1,5 @@
+## This tool has now been ported to support python 3.x
+
 ## Description
     This is a simple Python script used to validate email accounts that belong to Office 365 tenants. 
     This script takes either a single email address or a list of email addresses as input, 
